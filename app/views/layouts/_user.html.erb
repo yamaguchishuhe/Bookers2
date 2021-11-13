@@ -1,0 +1,19 @@
+  <div class="div1"> <h2>User info</h2>
+     <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
+    <table class="table">
+      <tbody><tr></tr>
+
+         <tr>
+	        <th>name</th>
+	        <th><%= @user %></th>
+         </tr>
+
+         <tr>
+	        <th>introduction</th>
+	        <th></th>
+         </tr>
+
+      </tbody>
+   </table>
+  <a class="btn btn-outline-secondary btn-block fas fa-user-cog edit_user_35111" href="/users/35111/edit"></a>
+</div>
