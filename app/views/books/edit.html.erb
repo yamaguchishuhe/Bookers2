@@ -3,13 +3,13 @@
   <div class="row">
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
   		<h1>Editing Book</h1>
-  		 <% if @edit_book.errors.any? %>
-    <%= @edit_book.errors.count %>errormessage
-   <% @edit_book.errors.full_messages.each do |message| %>
+  		 <% if @book.errors.any? %>
+    <%= @book.errors.count %>errormessage
+   <% @book.errors.full_messages.each do |message| %>
    <%= message %>
    <% end %>
    <% end %>
-   	<%= form_with model: @user,  local:true do  |f| %>
+   	<%= form_with model: @book,  local:true do  |f| %>
     <div class="form-group">
     <label for="book_title">Title</label>
   </br><%= f.text_field :title , class: "from-control" %>
